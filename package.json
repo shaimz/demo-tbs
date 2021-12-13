@@ -1,30 +1,37 @@
 {
-  "name": "pickbazar-react",
-  "version": "6.0.0",
+  "name": "pick-bazar",
+  "version": "2.1.0",
   "private": true,
   "author": "RedQ, Inc.",
   "workspaces": [
-    "admin/*",
-    "shop"
+    "frontend/*"
   ],
   "scripts": {
-    "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\" && rimraf node_modules",
-    "gql-clean": "yarn workspaces run rimraf \"{__generated__,src/graphql/*.d.ts,src/framework/graphql/**/*.d.ts}\"",
-    "dev:shop-rest": "yarn workspace @pick-bazar/shop dev:rest",
-    "build:shop-rest": "yarn workspace @pick-bazar/shop build:rest",
-    "start:shop-rest": "yarn workspace @pick-bazar/shop start",
-    "dev:admin-rest": "concurrently --kill-others \"yarn workspace @marvel/api-rest start:dev\" \"yarn workspace @marvel/admin-rest dev\"",
-    "build:admin-rest": "yarn workspace @marvel/admin-rest build",
-    "start:admin-rest": "yarn workspace @marvel/admin-rest start",
-    "dev:shop-gql": "yarn workspace @pick-bazar/shop dev:gql",
-    "build:shop-gql": "yarn workspace @pick-bazar/shop build:gql",
-    "start:shop-gql": "yarn workspace @pick-bazar/shop start",
-    "dev:admin-gql": "yarn workspace @marvel/admin-graphql dev",
-    "build:admin-gql": "yarn workspace @marvel/admin-graphql build",
-    "start:admin-gql": "yarn workspace @marvel/admin-graphql start"
+    "clean": "yarn workspaces run rimraf \"{.next,node_modules,__generated__,.cache,src/graphql/*.d.ts}\" && rimraf node_modules",
+    "gql-clean": "yarn workspaces run rimraf \"{__generated__,src/graphql/*.d.ts}\"",
+    "dev:shop-rest": "yarn workspace @pick-bazar/shop-rest dev",
+    "build:shop-rest": "yarn workspace @pick-bazar/shop-rest build",
+    "start:shop-rest": "yarn workspace @pick-bazar/shop-rest start",
+    "dev:admin-rest": "yarn workspace @pick-bazar/admin-rest dev",
+    "build:admin-rest": "yarn workspace @pick-bazar/admin-rest build",
+    "start:admin-rest": "yarn workspace @pick-bazar/admin-rest start",
+    "dev:shop-gql": "yarn workspace @pick-bazar/shop-graphql dev",
+    "build:shop-gql": "yarn workspace @pick-bazar/shop-graphql build",
+    "start:shop-gql": "yarn workspace @pick-bazar/shop-graphql start",
+    "dev:admin-gql": "yarn workspace @pick-bazar/admin-graphql dev",
+    "build:admin-gql": "yarn workspace @pick-bazar/admin-graphql build",
+    "start:admin-gql": "yarn workspace @pick-bazar/admin-graphql start",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "prettier": "^2.4.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
     "rimraf": "^3.0.2"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md,css}": [
+      "prettier --write"
+    ]
   }
 }
