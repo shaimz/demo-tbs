@@ -13,14 +13,16 @@ node_modules
 tmp/
 # production
 build
-dist
+
 # misc
 .DS_Store
-.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# If Packages have their independent repo
+# /packages
 
 # ignore log files
 npm-debug.log*
@@ -40,9 +42,14 @@ yarn-debug.log*
 yarn-error.log*
 /.changelog
 .npm/
+packages/server/node_modules
+packages/server/error.log
+packages/server/debug.log
+packages/web/.env
+packages/reusecore
+packages/cloud
 dist/
-.chache
-__generated__
+
 .docz
 .now
 .vercel

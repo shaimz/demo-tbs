@@ -1,0 +1,2 @@
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `is_active`, `shop_id`) VALUES
+(1, 'Store Owner', 'store_owner@demo.com', NULL, '$2a$12$IjcHXUpVef7uGaQElESfme0Ja4xiGimrpuDRnDjn4TuTYuyO/Y18i', NULL, '2021-06-27 04:13:00', '2021-06-27 04:13:00', 1, NULL);
