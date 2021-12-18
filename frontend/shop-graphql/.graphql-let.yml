@@ -1,4 +1,4 @@
-schema: https://demo.tbs.md
+schema: https://demo.tbs.md/graphql
 documents: ./src/**/*.graphql
 plugins:
   - typescript
