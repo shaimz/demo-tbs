@@ -13,8 +13,6 @@ import deepMerge from "deepmerge";
 import isEqual from "lodash/isEqual";
 import absoluteUrl from "next-absolute-url";
 
-const { origin } = absoluteUrl(req)
-
 export const APOLLO_STATE_PROP_NAME = "__APOLLO_STATE__";
 
 let apolloClient: ApolloClient<NormalizedCacheObject> | undefined;
@@ -31,7 +29,7 @@ function createApolloClient() {
   });
 
   const httpLink = createUploadLink({
-    uri: `${origin}/graphql`, // Server URL (must be absolute)
+    uri: 'https://demo.tbs.md/graphql', // Server URL (must be absolute)
     credentials: "same-origin",
   });
 
