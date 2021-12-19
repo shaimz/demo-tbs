@@ -17,6 +17,14 @@ export const APOLLO_STATE_PROP_NAME = "__APOLLO_STATE__";
 
 let apolloClient: ApolloClient<NormalizedCacheObject> | undefined;
 
+async function getInitialProps({ req }){
+  const { origin } = absoluteUrl(req, req.headers.host);
+  console.log('Requested URL ->',origin); 
+  // (or) other way
+  const host = absoluteUrl(req, req.headers.host);
+  console.log('Requested URL ->',host.origin); 
+}
+
 function createApolloClient() {
   const authLink = setContext((_, { headers }) => {
     const token = Cookies.get("auth_token");
