@@ -1,6 +1,7 @@
 const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 const { i18n } = require("./next-i18next.config");
+const path = require("path")
 
 module.exports = withPWA({
   i18n,
@@ -42,6 +43,8 @@ module.exports = withPWA({
       type: "json",
       use: "yaml-loader",
     });
+
+    config.resolve.modules.push(path.resolve('./'));
 
     return config;
   },
