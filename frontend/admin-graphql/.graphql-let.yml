@@ -1,4 +1,4 @@
-schema: http://localhost:8000/graphql
+schema: https://api-shaimz.vercel.app
 documents: ./src/**/*.graphql
 plugins:
   - typescript
