@@ -6,7 +6,7 @@ import ErrorMessage from "@components/ui/error-message";
 import usePrice from "@utils/use-price";
 import Loader from "@components/ui/loader/loader";
 import RecentOrders from "@components/order/recent-orders";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import PopularProductList from "@components/product/popular-product-list";
 import { useAdminDashboardQuery } from "@graphql/admin-dashboard-query.graphql";
 import WithdrawTable from "@components/withdraw/withdraw-table";

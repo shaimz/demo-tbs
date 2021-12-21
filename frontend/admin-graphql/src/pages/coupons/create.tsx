@@ -1,6 +1,6 @@
 import Layout from "@components/layouts/admin";
 import CouponCreateOrUpdateForm from "@components/coupon/coupon-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { adminOnly } from "@utils/auth-utils";
 

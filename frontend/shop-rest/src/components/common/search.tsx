@@ -1,7 +1,7 @@
 import SearchBox from "@components/ui/search-box";
 import { useSearch } from "@contexts/search.context";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 interface Props {
   label: string;
   [key: string]: unknown;

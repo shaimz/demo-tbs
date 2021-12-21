@@ -1,6 +1,6 @@
 import Layout from "@components/layouts/admin";
 import CreateOrUpdateOrderStatusForm from "@components/order-status/order-status-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function CreateOrderStatusPage() {

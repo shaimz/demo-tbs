@@ -3,7 +3,7 @@ import { siteSettings } from "@settings/site.settings";
 import SidebarWrapper from "@components/common/sidebar/sidebar-wrapper";
 import { useRouter } from "next/router";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function MobileMainMenu() {
   const { t } = useTranslation("common");

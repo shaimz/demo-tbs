@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Link from "@components/ui/link";
 import Button from "@components/ui/button";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type CookieBarProps = {
   hide: boolean;

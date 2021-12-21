@@ -8,7 +8,7 @@ import CouponFeedLoader from "@components/ui/loaders/coupon-feed-loader";
 import NotFound from "@components/common/not-found";
 import { Fragment } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function OfferPage() {
   const { t } = useTranslation("common");

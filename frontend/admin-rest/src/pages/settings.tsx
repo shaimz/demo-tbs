@@ -6,7 +6,7 @@ import { useSettingsQuery } from "@data/settings/use-settings.query";
 import { useShippingClassesQuery } from "@data/shipping/use-shippingClasses.query";
 import { useTaxesQuery } from "@data/tax/use-taxes.query";
 import { adminOnly } from "@utils/auth-utils";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function Settings() {

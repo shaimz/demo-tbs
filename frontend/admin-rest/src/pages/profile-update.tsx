@@ -4,7 +4,7 @@ import ChangePasswordForm from "@components/auth/change-password-from";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useMeQuery } from "@data/user/use-me.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function ProfilePage() {

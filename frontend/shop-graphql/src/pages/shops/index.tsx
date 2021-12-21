@@ -1,7 +1,7 @@
 import { ShopsDocument, useShopsQuery } from "@graphql/shops.graphql";
 import ShopCard from "@components/ui/shop-card";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import ShopPageLayout from "@components/layout/shop-layout";
 import { GetStaticProps } from "next";
 import { addApolloState, initializeApollo } from "@utils/apollo";

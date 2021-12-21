@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export function formatString(count: number | null | undefined, string: string) {
   if (!count) return `${count} ${string}`;

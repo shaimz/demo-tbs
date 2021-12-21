@@ -17,7 +17,7 @@ import dynamic from "next/dynamic";
 import ProductAttributes from "./product-details/product-attributes";
 import ProductCategories from "./product-details/product-categories";
 import VariationPrice from "./product-details/product-variant-price";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { ROUTES } from "@utils/routes";
 import { useModalAction } from "@components/ui/modal/modal.context";
 const RelatedProducts = dynamic(

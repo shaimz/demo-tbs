@@ -2,7 +2,7 @@ import Shop from "@repositories/shop";
 import { useMutation, useQueryClient } from "react-query";
 import { API_ENDPOINTS } from "@utils/api/endpoints";
 import { toast } from "react-toastify";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 export interface IShopApproveVariables {
   variables: {
     id: string;

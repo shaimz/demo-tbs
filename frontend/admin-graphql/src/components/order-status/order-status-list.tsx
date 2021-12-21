@@ -6,7 +6,7 @@ import {
   OrderStatus,
 } from "@graphql/order_status.graphql";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 export type IProps = {

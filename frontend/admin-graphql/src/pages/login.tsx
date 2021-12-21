@@ -1,6 +1,6 @@
 import LoginForm from "@components/auth/login-form";
 import Logo from "@components/ui/logo";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { GetStaticProps } from "next";
 import { ROUTES } from "@utils/routes";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";

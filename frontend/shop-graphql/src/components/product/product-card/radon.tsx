@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import cn from "classnames";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { ROUTES } from "@utils/routes";
 
 type RadonProps = {

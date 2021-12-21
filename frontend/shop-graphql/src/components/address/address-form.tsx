@@ -5,7 +5,7 @@ import Radio from "@components/ui/radio/radio";
 import TextArea from "@components/ui/text-area";
 import { useUpdateCustomerMutation, AddressType } from "@graphql/auth.graphql";
 import { useForm } from "react-hook-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import {

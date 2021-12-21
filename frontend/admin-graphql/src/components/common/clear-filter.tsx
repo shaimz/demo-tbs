@@ -4,7 +4,7 @@ import {
   SortOrder,
 } from "@graphql/products.graphql";
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type Props = {
   refetch: Function;

@@ -5,7 +5,7 @@ import { useVerifyForgetPasswordTokenMutation } from "@data/user/use-verify-forg
 import { useResetPasswordMutation } from "@data/user/use-reset-password.mutation";
 import dynamic from "next/dynamic";
 import Router from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 const EnterEmailView = dynamic(() => import("./enter-email-view"));
 const EnterTokenView = dynamic(() => import("./enter-token-view"));
 const EnterNewPasswordView = dynamic(() => import("./enter-new-password-view"));

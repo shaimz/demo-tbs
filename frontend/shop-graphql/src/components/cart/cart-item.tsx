@@ -5,7 +5,7 @@ import Counter from "@components/ui/counter";
 import { CloseIcon } from "@components/icons/close-icon";
 import { fadeInOut } from "@utils/motion/fade-in-out";
 import usePrice from "@utils/use-price";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 
 interface CartItemProps {

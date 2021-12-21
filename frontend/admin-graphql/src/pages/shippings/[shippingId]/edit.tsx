@@ -4,7 +4,7 @@ import { useShippingClassQuery } from "@graphql/shipping.graphql";
 import CreateOrUpdateShippingForm from "@components/shipping/shipping-form";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { adminOnly } from "@utils/auth-utils";
 

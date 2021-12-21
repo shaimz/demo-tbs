@@ -9,7 +9,7 @@ import * as typeIcon from "@components/icons/type";
 import dynamic from "next/dynamic";
 import { ROUTES } from "@utils/routes";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { getIcon } from "@utils/get-icon";
 import { Waypoint } from "react-waypoint";
 import { useTypesQuery } from "@data/type/use-types.query";

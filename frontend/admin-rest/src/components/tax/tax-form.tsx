@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import { Tax } from "@ts-types/generated";
 import { useCreateTaxClassMutation } from "@data/tax/use-tax-create.mutation";
 import { useUpdateTaxClassMutation } from "@data/tax/use-tax-update.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { taxValidationSchema } from "./tax-validation-schema";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { IosArrowDown } from "@components/icons/ios-arrow-down";
 import { IosArrowUp } from "@components/icons/ios-arrow-up";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const StickerCard = ({
   titleTransKey,

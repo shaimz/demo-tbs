@@ -3,7 +3,7 @@ import cn from "classnames";
 import Link from "@components/ui/link";
 import { Eye } from "@components/icons/eye-icon";
 import { EyeOff } from "@components/icons/eye-off-icon";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export interface Props extends InputHTMLAttributes<HTMLInputElement> {
   className?: string;

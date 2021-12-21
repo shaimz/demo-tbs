@@ -2,7 +2,7 @@ import Input from "@components/ui/input";
 import Description from "@components/ui/description";
 import Card from "@components/common/card";
 import { useFormContext } from "react-hook-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type IProps = {
   initialValues: any;

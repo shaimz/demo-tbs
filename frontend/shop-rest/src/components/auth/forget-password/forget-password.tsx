@@ -4,7 +4,7 @@ import Alert from "@components/ui/alert";
 import { useForgetPasswordMutation } from "@data/auth/use-forget-password.mutation";
 import { useVerifyForgetPasswordTokenMutation } from "@data/auth/use-verify-forget-password-token.mutation";
 import { useResetPasswordMutation } from "@data/auth/use-reset-password.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import dynamic from "next/dynamic";
 import { useModalAction } from "@components/ui/modal/modal.context";
 const EnterEmailView = dynamic(() => import("./enter-email-view"));

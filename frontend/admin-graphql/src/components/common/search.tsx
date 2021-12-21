@@ -3,7 +3,7 @@ import { SearchIcon } from "@components/icons/search-icon";
 import cn from "classnames";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const classes = {
   root: "ps-10 pe-4 h-12 flex items-center w-full rounded appearance-none transition duration-300 ease-in-out text-heading text-sm focus:outline-none focus:ring-0",

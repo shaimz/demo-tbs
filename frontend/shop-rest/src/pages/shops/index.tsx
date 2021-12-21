@@ -1,7 +1,7 @@
 import ShopCard from "@components/ui/shop-card";
 import { fetchShops, useShopsQuery } from "@data/shop/use-shops.query";
 import ShopPageLayout from "@components/layout/shop-layout";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { Fragment } from "react";
 import { GetStaticProps } from "next";

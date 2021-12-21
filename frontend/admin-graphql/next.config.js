@@ -44,8 +44,6 @@ module.exports = withPWA({
       use: "yaml-loader",
     });
 
-    config.resolve.modules.push(path.resolve('./'));
-
     return config;
   },
   typescript: {

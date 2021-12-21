@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import styles from "./radio.module.css";
 
 export interface Props extends InputHTMLAttributes<HTMLInputElement> {

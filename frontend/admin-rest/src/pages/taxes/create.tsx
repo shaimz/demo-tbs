@@ -1,6 +1,6 @@
 import Layout from "@components/layouts/admin";
 import CreateOrUpdateTaxForm from "@components/tax/tax-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export default function CreateTaxPage() {

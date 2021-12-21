@@ -8,7 +8,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useApolloClient } from "@apollo/client";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { allowedRoles, hasAccess, setAuthCredentials } from "@utils/auth-utils";

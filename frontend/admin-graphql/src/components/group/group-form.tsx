@@ -15,7 +15,7 @@ import Label from "@components/ui/label";
 
 import * as typeIcons from "@components/icons/type";
 import { toast } from "react-toastify";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 import SelectInput from "@components/ui/select-input";
 import { yupResolver } from "@hookform/resolvers/yup";

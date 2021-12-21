@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Table } from "@components/ui/table";
 import ActionButtons from "@components/common/action-buttons";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 import Badge from "@components/ui/badge/badge";
 import { ShopPaginator } from "@ts-types/generated";

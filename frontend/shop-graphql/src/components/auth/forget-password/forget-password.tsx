@@ -6,7 +6,7 @@ import {
 } from "@graphql/auth.graphql";
 import Logo from "@components/ui/logo";
 import Alert from "@components/ui/alert";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import dynamic from "next/dynamic";
 import { useModalAction } from "@components/ui/modal/modal.context";
 const EnterEmailView = dynamic(() => import("./enter-email-view"));

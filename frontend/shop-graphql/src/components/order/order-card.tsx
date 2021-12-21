@@ -1,7 +1,7 @@
 import usePrice from "@utils/use-price";
 import dayjs from "dayjs";
 import cn from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type OrderCardProps = {
   order: any;

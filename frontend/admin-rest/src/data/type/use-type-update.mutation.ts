@@ -3,7 +3,7 @@ import { useMutation, useQueryClient } from "react-query";
 import { toast } from "react-toastify";
 import Type from "@repositories/type";
 import { API_ENDPOINTS } from "@utils/api/endpoints";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 export interface ITypeUpdateVariables {
   variables: {
     id: string;

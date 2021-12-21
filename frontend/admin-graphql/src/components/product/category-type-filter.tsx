@@ -6,7 +6,7 @@ import {
 } from "@graphql/products.graphql";
 import React from "react";
 import { useTypesQuery } from "@graphql/type.graphql";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Label from "@components/ui/label";
 import cn from "classnames";
 

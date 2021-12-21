@@ -30,7 +30,7 @@ import {
   Tag,
 } from "@ts-types/generated";
 import { useCreateProductMutation } from "@data/product/product-create.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useUpdateProductMutation } from "@data/product/product-update.mutation";
 import { useShopQuery } from "@data/shop/use-shop.query";
 import ProductTagInput from "./product-tag-input";

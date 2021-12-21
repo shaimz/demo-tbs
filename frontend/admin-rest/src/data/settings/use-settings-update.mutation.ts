@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import Settings from "@repositories/settings";
 import { API_ENDPOINTS } from "@utils/api/endpoints";
 import { useSettings } from "@contexts/settings.context";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export interface ISettingsUpdateVariables {
   variables: { input: SettingsInput };

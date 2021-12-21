@@ -2,7 +2,7 @@ import Layout from "@components/layout/layout";
 import Accordion from "@components/ui/accordion";
 import { faq } from "@settings/faq.settings";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function HelpPage() {
   const { t } = useTranslation();

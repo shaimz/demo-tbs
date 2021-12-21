@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import useOnClickOutside from "@utils/use-click-outside";
 import { zoomInOut } from "@utils/motion/zoom-in-out";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type DivElementRef = React.MutableRefObject<HTMLDivElement>;
 

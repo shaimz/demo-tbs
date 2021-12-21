@@ -1,5 +1,5 @@
 import Logo from "@components/ui/logo";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import RegistrationForm from "@components/auth/registration-form";

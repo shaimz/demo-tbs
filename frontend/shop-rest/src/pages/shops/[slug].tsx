@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ShopProductFeed from "@components/product/feed-shop";
 import { fetchShop } from "@data/shop/use-shop.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useWindowSize } from "@utils/use-window-size";
 import ShopProfileCard from "@components/profile/profile-card";
 import dynamic from "next/dynamic";

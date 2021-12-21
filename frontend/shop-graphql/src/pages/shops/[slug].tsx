@@ -3,7 +3,7 @@ import ShopProductFeed from "@components/product/feed-shop";
 import { useWindowSize } from "@utils/use-window-size";
 import { ShopDocument, ShopsDocument } from "@graphql/shops.graphql";
 import dynamic from "next/dynamic";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import ShopProfileCard from "@components/profile/profile-card";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { GetStaticPathsContext, GetStaticProps } from "next";

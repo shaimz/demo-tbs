@@ -2,7 +2,7 @@ import { Table } from "@components/ui/table";
 import { Product, Shop } from "@ts-types/generated";
 import usePrice from "@utils/use-price";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 export type IProps = {

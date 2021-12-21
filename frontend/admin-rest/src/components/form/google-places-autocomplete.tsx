@@ -2,7 +2,7 @@ import { Autocomplete, useJsApiLoader } from "@react-google-maps/api";
 import { Libraries } from "@react-google-maps/api/dist/utils/make-load-script-url";
 import { LocationInput } from "@ts-types/generated";
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Loader from "@components/ui/loader/loader";
 
 const libraries: Libraries = ["places"];

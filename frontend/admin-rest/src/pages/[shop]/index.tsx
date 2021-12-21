@@ -19,7 +19,7 @@ import {
 } from "@utils/auth-utils";
 import ErrorMessage from "@components/ui/error-message";
 import usePrice from "@utils/use-price";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import isEmpty from "lodash/isEmpty";
 import { useShopQuery } from "@data/shop/use-shop.query";
 import { GetStaticPaths } from "next";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MapPin } from "@components/icons/map-pin";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { formatAddress } from "@utils/format-address";
 import { ROUTES } from "@utils/routes";
 import Link from "./link";

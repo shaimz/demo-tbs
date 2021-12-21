@@ -7,7 +7,7 @@ import {
   SqlOperator,
 } from "@graphql/categories.graphql";
 import { useEffect } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   control: Control<any>;

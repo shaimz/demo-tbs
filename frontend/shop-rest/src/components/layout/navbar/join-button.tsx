@@ -1,6 +1,6 @@
 import Button from "@components/ui/button";
 import { useModalAction } from "@components/ui/modal/modal.context";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function JoinButton() {
   const { t } = useTranslation("common");

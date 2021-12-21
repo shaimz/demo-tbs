@@ -11,7 +11,7 @@ import { parseContextCookie } from "@utils/parse-cookie";
 import Spinner from "@components/ui/loaders/spinner/spinner";
 import Scrollbar from "@components/ui/scrollbar";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useOrdersQuery } from "@graphql/orders.graphql";
 import { NetworkStatus } from "@apollo/client";
 import Button from "@components/ui/button";

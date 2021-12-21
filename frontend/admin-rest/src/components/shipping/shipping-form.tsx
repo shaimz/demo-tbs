@@ -11,7 +11,7 @@ import { useUpdateShippingClassMutation } from "@data/shipping/use-shipping-upda
 import { yupResolver } from "@hookform/resolvers/yup";
 import { shippingValidationSchema } from "./shipping-validation-schema";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const defaultValues = {
   name: "",

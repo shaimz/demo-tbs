@@ -3,7 +3,7 @@ import Label from "@components/ui/label";
 import { Control, useFormState, useWatch } from "react-hook-form";
 import { useEffect } from "react";
 import { useTagsQuery } from "@data/tag/use-tags.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   control: Control<any>;

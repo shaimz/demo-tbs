@@ -10,7 +10,7 @@ import PopularProductList from "@components/product/popular-product-list";
 import { useOrdersQuery } from "@data/order/use-orders.query";
 import { usePopularProductsQuery } from "@data/analytics/use-popular-products.query";
 import { useAnalyticsQuery } from "@data/analytics/use-analytics.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useWithdrawsQuery } from "@data/withdraw/use-withdraws.query";
 import WithdrawTable from "@components/withdraw/withdraw-table";
 import { ShopIcon } from "@components/icons/sidebar";

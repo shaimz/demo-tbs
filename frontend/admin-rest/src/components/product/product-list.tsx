@@ -6,7 +6,7 @@ import { siteSettings } from "@settings/site.settings";
 import usePrice from "@utils/use-price";
 import Badge from "@components/ui/badge/badge";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import {
   Product,
   ProductPaginator,

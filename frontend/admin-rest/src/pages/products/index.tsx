@@ -8,7 +8,7 @@ import { OrderField } from "@ts-types/index";
 import { SortOrder } from "@ts-types/generated";
 import { useState } from "react";
 import { useProductsQuery } from "@data/product/products.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import SortForm from "@components/common/sort-form";
 import CategoryTypeFilter from "@components/product/category-type-filter";

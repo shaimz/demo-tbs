@@ -8,7 +8,7 @@ import CartItem from "@components/cart/cart-item";
 import { fadeInOut } from "@utils/motion/fade-in-out";
 import { ROUTES } from "@utils/routes";
 import usePrice from "@utils/use-price";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { formatString } from "@utils/format-string";
 

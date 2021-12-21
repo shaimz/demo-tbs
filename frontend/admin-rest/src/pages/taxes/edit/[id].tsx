@@ -6,7 +6,7 @@ import Loader from "@components/ui/loader/loader";
 import { useTaxQuery } from "@data/tax/use-tax.query";
 import { GetStaticPaths } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function UpdateTaxPage() {
   const { t } = useTranslation();

@@ -9,7 +9,7 @@ import { CURRENCY } from "./currency";
 import { siteSettings } from "@settings/site.settings";
 import ValidationError from "@components/ui/form-validation-error";
 import { useUpdateSettingsMutation } from "@data/settings/use-settings-update.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { settingsValidationSchema } from "./settings-validation-schema";
 import FileInput from "@components/ui/file-input";

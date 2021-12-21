@@ -16,7 +16,7 @@ import { Attachment } from "@ts-types/generated";
 import { useOrderQuery } from "@data/order/use-order.query";
 import { useUpdateOrderMutation } from "@data/order/use-order-update.mutation";
 import { useOrderStatusesQuery } from "@data/order-status/use-order-statuses.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import SelectInput from "@components/ui/select-input";
 import { useIsRTL } from "@utils/locals";

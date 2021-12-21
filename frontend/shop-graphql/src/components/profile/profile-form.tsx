@@ -7,7 +7,7 @@ import { maskPhoneNumber } from "@utils/mask-phone-number";
 import { useForm } from "react-hook-form";
 import TextArea from "@components/ui/text-area";
 import { toast } from "react-toastify";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import pick from "lodash/pick";
 
 interface Props {

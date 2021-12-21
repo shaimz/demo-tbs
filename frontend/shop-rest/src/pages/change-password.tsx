@@ -12,7 +12,7 @@ import PasswordInput from "@components/ui/password-input";
 import { useChangePasswordMutation } from "@data/auth/use-change-password.mutation";
 import * as yup from "yup";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export const getServerSideProps: GetServerSideProps = async ({
   req,

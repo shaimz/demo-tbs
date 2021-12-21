@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import Card from "@components/common/card";
 import Description from "@components/ui/description";
 import { useCreateUserMutation } from "@data/user/use-user-create.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { customerValidationSchema } from "./user-validation-schema";
 

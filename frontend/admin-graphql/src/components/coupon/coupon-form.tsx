@@ -19,7 +19,7 @@ import { ROUTES } from "@utils/routes";
 import ValidationError from "@components/ui/form-validation-error";
 import { toast } from "react-toastify";
 import { useSettings } from "@contexts/settings.context";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import FileInput from "@components/ui/file-input";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { couponValidationSchema } from "./coupon-validation-schema";

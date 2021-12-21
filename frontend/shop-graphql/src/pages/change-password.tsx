@@ -9,7 +9,7 @@ import { parseContextCookie } from "@utils/parse-cookie";
 import PasswordInput from "@components/ui/password-input";
 import { toast } from "react-toastify";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 

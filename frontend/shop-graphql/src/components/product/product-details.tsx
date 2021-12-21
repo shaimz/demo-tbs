@@ -3,7 +3,7 @@ import BackButton from "@components/ui/back-button";
 import { AddToCart } from "@components/product/add-to-cart/add-to-cart";
 import usePrice from "@utils/use-price";
 import { ThumbsCarousel } from "@components/ui/carousel";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { getVariations } from "@utils/get-variations";
 import { useState } from "react";
 import isEqual from "lodash/isEqual";

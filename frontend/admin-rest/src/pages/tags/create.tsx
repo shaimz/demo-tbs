@@ -1,4 +1,4 @@
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Layout from "@components/layouts/admin";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import CreateOrUpdateTagForm from "@components/tag/tag-form";

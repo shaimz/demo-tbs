@@ -1,7 +1,7 @@
 import cn from "classnames";
 import NavLink from "@components/ui/link/nav-link";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type DashboardSidebarProps = {
   className?: string;

@@ -5,7 +5,7 @@ import Avatar from "@components/common/avatar";
 import Link from "next/link";
 import { siteSettings } from "@settings/site.settings";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useMeQuery } from "@data/user/use-me.query";
 
 export default function AuthorizedMenu() {

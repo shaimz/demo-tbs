@@ -6,7 +6,7 @@ import { useApolloClient } from "@apollo/client";
 import { useLogoutMutation } from "@graphql/auth.graphql";
 import Spinner from "@components/ui/loaders/spinner/spinner";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function SignOut() {
   const { t } = useTranslation("common");

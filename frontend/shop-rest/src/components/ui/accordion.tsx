@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { MinusIcon } from "@components/icons/minus-icon";
 import { PlusIcon } from "@components/icons/plus-icon";
 import { heightCollapse } from "@utils/motion/height-collapse";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type CollapseProps = {
   i: number;

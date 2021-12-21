@@ -2,7 +2,7 @@ import { Table } from "@components/ui/table";
 import ActionButtons from "@components/common/action-buttons";
 import { Tax } from "@ts-types/generated";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 export type IProps = {

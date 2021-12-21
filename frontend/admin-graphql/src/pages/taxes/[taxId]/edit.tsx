@@ -4,7 +4,7 @@ import CreateOrUpdateTaxForm from "@components/tax/tax-form";
 import { useTaxQuery } from "@graphql/tax.graphql";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { adminOnly } from "@utils/auth-utils";
 

@@ -1,6 +1,6 @@
 import cn from "classnames";
 import { CloseIcon } from "@components/icons/close-icon";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type PaymentCardProps = {
   id: string;

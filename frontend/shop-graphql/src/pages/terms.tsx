@@ -2,7 +2,7 @@ import Layout from "@components/layout/layout";
 import { termsAndServices } from "@settings/terms.settings";
 import { Link, Element } from "react-scroll";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 function makeTitleToDOMId(title: string) {
   return title.toLowerCase().split(" ").join("_");

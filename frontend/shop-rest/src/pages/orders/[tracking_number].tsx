@@ -14,7 +14,7 @@ import { useOrderQuery } from "@data/order/use-order.query";
 import { ROUTES } from "@utils/routes";
 import { useSearch } from "@contexts/search.context";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { useIsRTL } from "@utils/locals";
 import Badge from "@components/ui/badge";

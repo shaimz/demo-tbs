@@ -12,7 +12,7 @@ import { getErrorMessage } from "@utils/form-error";
 import { useRouter } from "next/router";
 import { ROUTES } from "@utils/routes";
 import { toast } from "react-toastify";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { taxValidationSchema } from "./tax-validation-schema";
 

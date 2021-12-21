@@ -9,7 +9,7 @@ import {
   useProductsQuery,
 } from "@graphql/products.graphql";
 import { useState } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ShopLayout from "@components/layouts/shop";
 import { useRouter } from "next/router";

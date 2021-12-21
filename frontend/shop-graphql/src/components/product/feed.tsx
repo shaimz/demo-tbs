@@ -9,7 +9,7 @@ import ErrorMessage from "@components/ui/error-message";
 import { LIMIT } from "@utils/constants";
 import renderProductCard from "@components/product/render-product-card";
 import NotFound from "@components/common/not-found";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const ProductFeedLoader = dynamic(
   () => import("@components/ui/loaders/product-feed-loader")

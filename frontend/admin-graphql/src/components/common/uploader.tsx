@@ -5,7 +5,7 @@ import { useUploadMutation } from "@graphql/upload.graphql";
 import { Attachment } from "@graphql/admin-dashboard-query.graphql";
 import { CloseIcon } from "@components/icons/close-icon";
 import Loader from "@components/ui/loader/loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import isObject from "lodash/isObject";
 
 const getPreviewImage = (value: any) => {

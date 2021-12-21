@@ -2,7 +2,7 @@ import { UploadIcon } from "@components/icons/upload-icon";
 import { useUploadMutation } from "@data/upload/use-upload.mutation";
 import { useEffect, useState } from "react";
 import { useDropzone, FileWithPath } from "react-dropzone";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Spinner from "@components/ui/loaders/spinner/spinner";
 
 const getPreviewImage = (value: any) => {

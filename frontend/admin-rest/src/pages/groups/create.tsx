@@ -1,7 +1,7 @@
 import Layout from "@components/layouts/admin";
 import CreateOrUpdateTypeForm from "@components/group/group-form";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function CreateTypePage() {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Link from "@components/ui/link";
 import Badge from "@components/ui/badge/badge";
 

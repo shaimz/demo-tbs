@@ -1,6 +1,6 @@
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Image from "next/image";
 import { useMeQuery } from "@data/user/use-me.query";
 import ShopCard from "@components/shop/shop-card";

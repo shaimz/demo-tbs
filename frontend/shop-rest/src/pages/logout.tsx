@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import Spinner from "@components/ui/loaders/spinner/spinner";
 import { useLogoutMutation } from "@data/auth/use-logout.mutation";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function SignOut() {
   const { t } = useTranslation("common");

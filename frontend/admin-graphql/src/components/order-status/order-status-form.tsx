@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 import { ROUTES } from "@utils/routes";
 import ColorPicker from "@components/ui/color-picker/color-picker";
 import { toast } from "react-toastify";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { orderStatusValidationSchema } from "./order-status-validation-schema";
 

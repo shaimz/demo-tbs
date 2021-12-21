@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import cn from "classnames";
 import CopyToClipboard from "react-copy-to-clipboard";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type CouponCardProps = {
   coupon?: any;

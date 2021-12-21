@@ -4,7 +4,7 @@ import Button from "@components/ui/button";
 import { useForm } from "react-hook-form";
 import { useCheckout } from "@contexts/checkout.context";
 import { useVerifyCouponMutation } from "@graphql/coupons.graphql";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const Coupon = () => {
   const { t } = useTranslation("common");

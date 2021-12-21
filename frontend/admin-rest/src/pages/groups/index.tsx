@@ -9,7 +9,7 @@ import { OrderField } from "@ts-types/index";
 import { SortOrder } from "@ts-types/generated";
 import { useState } from "react";
 import { useTypesQuery } from "@data/type/use-types.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { ROUTES } from "@utils/routes";
 import SortForm from "@components/common/sort-form";

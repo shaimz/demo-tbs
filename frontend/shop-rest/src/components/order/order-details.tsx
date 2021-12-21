@@ -3,7 +3,7 @@ import usePrice from "@utils/use-price";
 import { siteSettings } from "@settings/site.settings";
 import { formatAddress } from "@utils/format-address";
 import OrderStatus from "./order-status";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
 import { Eye } from "@components/icons/eye-icon";

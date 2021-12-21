@@ -4,7 +4,7 @@ import { CloseIcon } from "@components/icons/close-icon";
 import { PencilIcon } from "@components/icons/pencil-icon";
 import { PlusIcon } from "@components/icons/plus-icon";
 import { formatAddress } from "@utils/format-address";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface ICardItem {
   id: string | number;

@@ -1,7 +1,7 @@
 import Logo from "@components/ui/logo";
 import { useUI } from "@contexts/ui.context";
 import { CloseIcon } from "@components/icons/close-icon";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const DrawerWrapper: React.FC = ({ children }) => {
   const { t } = useTranslation("common");

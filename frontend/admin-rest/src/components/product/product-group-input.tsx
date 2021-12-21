@@ -3,7 +3,7 @@ import Label from "@components/ui/label";
 import ValidationError from "@components/ui/form-validation-error";
 import { Control } from "react-hook-form";
 import { useTypesQuery } from "@data/type/use-types.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   control: Control<any>;

@@ -1,7 +1,7 @@
 import cn from "classnames";
 import Image from "next/image";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { formatAddress } from "@utils/format-address";
 import { isEmpty } from "lodash";
 import ReadMore from "@components/ui/truncate";

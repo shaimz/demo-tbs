@@ -1,5 +1,5 @@
 import cn from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type BadgeProps = {
   className?: string;

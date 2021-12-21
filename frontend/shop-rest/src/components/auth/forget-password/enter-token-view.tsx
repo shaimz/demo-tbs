@@ -2,7 +2,7 @@ import Button from "@components/ui/button";
 import Input from "@components/ui/input";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import * as yup from "yup";
 interface Props {
   onSubmit: (values: { token: string }) => void;

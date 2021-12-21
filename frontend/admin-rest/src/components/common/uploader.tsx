@@ -4,7 +4,7 @@ import { useDropzone } from "react-dropzone";
 import { Attachment } from "@ts-types/generated";
 import { CloseIcon } from "@components/icons/close-icon";
 import Loader from "@components/ui/loader/loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useUploadMutation } from "@data/upload/use-upload.mutation";
 
 const getPreviewImage = (value: any) => {

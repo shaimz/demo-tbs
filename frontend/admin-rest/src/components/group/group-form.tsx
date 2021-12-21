@@ -11,7 +11,7 @@ import { Type } from "@ts-types/generated";
 import { useCreateTypeMutation } from "@data/type/use-type-create.mutation";
 import { useUpdateTypeMutation } from "@data/type/use-type-update.mutation";
 import { typeIconList } from "./group-icons";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { typeValidationSchema } from "./group-validation-schema";
 import SelectInput from "@components/ui/select-input";

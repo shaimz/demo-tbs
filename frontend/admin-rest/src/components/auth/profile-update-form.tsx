@@ -5,7 +5,7 @@ import Description from "@components/ui/description";
 import Card from "@components/common/card";
 import { useUpdateUserMutation } from "@data/user/use-user-update.mutation";
 import TextArea from "@components/ui/text-area";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import FileInput from "@components/ui/file-input";
 import pick from "lodash/pick";
 

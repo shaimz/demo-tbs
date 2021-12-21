@@ -1,7 +1,7 @@
 import { Control, Controller, FieldErrors } from "react-hook-form";
 import { Switch } from "@headlessui/react";
 import ValidationError from "./form-validation-error";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   control: Control<any>;

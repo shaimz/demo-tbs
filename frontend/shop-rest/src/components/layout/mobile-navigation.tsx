@@ -6,7 +6,7 @@ import { SearchIcon } from "@components/icons/search-icon";
 import { HomeIcon } from "@components/icons/home-icon";
 import { ShoppingBagIcon } from "@components/icons/shopping-bag-icon";
 import { UserIcon } from "@components/icons/user-icon";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { useModalAction } from "@components/ui/modal/modal.context";
 

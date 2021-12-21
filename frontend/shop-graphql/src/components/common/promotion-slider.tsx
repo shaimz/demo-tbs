@@ -1,7 +1,7 @@
 import { ArrowNext, ArrowPrev } from "@components/icons";
 import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import "swiper/swiper-bundle.css";
 // dummy data
 const data = [

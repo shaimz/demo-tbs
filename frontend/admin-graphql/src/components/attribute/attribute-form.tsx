@@ -4,7 +4,7 @@ import Button from "@components/ui/button";
 import Description from "@components/ui/description";
 import Card from "@components/common/card";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { toast } from "react-toastify";
 import {
   Attribute,

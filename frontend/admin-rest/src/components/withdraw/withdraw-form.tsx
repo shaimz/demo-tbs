@@ -5,7 +5,7 @@ import TextArea from "@components/ui/text-area";
 import Card from "@components/common/card";
 import Description from "@components/ui/description";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { withdrawValidationSchema } from "./withdraw-validation-schema";
 import { useState } from "react";

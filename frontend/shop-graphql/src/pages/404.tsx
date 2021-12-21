@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function NotFoundPage() {
   const { t } = useTranslation("common");

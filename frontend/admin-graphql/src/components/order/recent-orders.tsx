@@ -5,7 +5,7 @@ import usePrice from "@utils/use-price";
 import relativeTime from "dayjs/plugin/relativeTime";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type IProps = {
   orders: OrderPaginator | null | undefined;

@@ -1,6 +1,6 @@
 import styles from "./loader.module.css";
 import cn from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   className?: string;

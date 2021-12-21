@@ -35,7 +35,7 @@ import omit from "lodash/omit";
 import orderBy from "lodash/orderBy";
 import sum from "lodash/sum";
 import ProductTypeInput from "./product-type-input";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useShopQuery } from "@graphql/shops.graphql";
 import cloneDeep from "lodash/cloneDeep";
 import ProductTagInput from "./product-tag-input";

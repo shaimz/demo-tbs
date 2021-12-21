@@ -10,7 +10,7 @@ import { ROUTES } from "@utils/routes";
 import usePrice from "@utils/use-price";
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { formatString } from "@utils/format-string";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const CartSidebarView = () => {
   const { t } = useTranslation("common");

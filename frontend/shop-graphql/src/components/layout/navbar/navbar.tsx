@@ -8,7 +8,7 @@ import { useUI } from "@contexts/ui.context";
 import dynamic from "next/dynamic";
 import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const AuthorizedMenu = dynamic(
   () => import("@components/layout/navbar/authorized-menu"),

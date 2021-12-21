@@ -6,7 +6,7 @@ import * as categoriesIcon from "@components/icons/category";
 import { ROUTES } from "@utils/routes";
 import { CategoryPaginator } from "@ts-types/generated";
 import Image from "next/image";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 export type IProps = {

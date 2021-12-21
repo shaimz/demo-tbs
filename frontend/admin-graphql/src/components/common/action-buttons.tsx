@@ -3,7 +3,7 @@ import { EditIcon } from "@components/icons/edit";
 import Trash from "@components/icons/trash";
 import { Eye } from "@components/icons/eye-icon";
 import Link from "@components/ui/link";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { CheckMarkCircle } from "@components/icons/checkmark-circle";
 import { useModalAction } from "@components/ui/modal/modal.context";
 import { CloseFillIcon } from "@components/icons/close-fill";

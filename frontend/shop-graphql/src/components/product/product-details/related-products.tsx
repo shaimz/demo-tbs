@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import renderProductCard from "@components/product/render-product-card";
 import cn from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 interface Props {
   products: any;
   currentProductId: any;

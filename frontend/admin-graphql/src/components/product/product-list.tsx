@@ -7,7 +7,7 @@ import { siteSettings } from "@settings/site.settings";
 import usePrice from "@utils/use-price";
 import { useRouter } from "next/router";
 import Badge from "@components/ui/badge/badge";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { Product, ProductType, Shop } from "@graphql/products.graphql";
 import { useIsRTL } from "@utils/locals";
 

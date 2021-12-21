@@ -3,7 +3,7 @@ import cn from "classnames";
 import { siteSettings } from "@settings/site.settings";
 import usePrice from "@utils/use-price";
 import { AddToCart } from "@components/product/add-to-cart/add-to-cart";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useModalAction } from "@components/ui/modal/modal.context";
 
 type NeonProps = {

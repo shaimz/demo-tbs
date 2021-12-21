@@ -7,7 +7,7 @@ import {
 import Input from "@components/ui/input";
 import { useApproveShopMutation } from "@graphql/shops.graphql";
 import { getErrorMessage } from "@utils/form-error";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 type FormValues = {
   admin_commission_rate: number;
 };

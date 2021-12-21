@@ -20,7 +20,7 @@ import {
 } from "@utils/auth-utils";
 import ErrorMessage from "@components/ui/error-message";
 import usePrice from "@utils/use-price";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { addApolloState, initializeApollo } from "@utils/apollo";
 import isEmpty from "lodash/isEmpty";
 import { CubeIcon } from "@components/icons/shops/cube";

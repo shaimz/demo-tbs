@@ -1,7 +1,7 @@
 import Select from "@components/ui/select/select";
 
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Label from "@components/ui/label";
 import cn from "classnames";
 import { useTypesQuery } from "@data/type/use-types.query";

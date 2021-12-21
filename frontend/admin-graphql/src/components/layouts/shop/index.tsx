@@ -3,7 +3,7 @@ import Navbar from "@components/layouts/navigation/top-navbar";
 import { getAuthCredentials, hasAccess } from "@utils/auth-utils";
 import { siteSettings } from "@settings/site.settings";
 import SidebarItem from "@components/layouts/navigation/sidebar-item";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const ShopLayout: React.FC = ({ children }) => {
   const { t } = useTranslation();

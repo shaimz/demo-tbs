@@ -3,7 +3,7 @@ import CartCheckBagIcon from "@components/icons/cart-check-bag";
 import { formatString } from "@utils/format-string";
 import usePrice from "@utils/use-price";
 import { useCart } from "@contexts/quick-cart/cart.context";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const CartCounterButton = () => {
   const { t } = useTranslation();

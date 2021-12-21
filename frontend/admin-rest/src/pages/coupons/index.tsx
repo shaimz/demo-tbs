@@ -7,7 +7,7 @@ import { useState } from "react";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useCouponsQuery } from "@data/coupon/use-coupons.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { SortOrder } from "@ts-types/generated";
 import SortForm from "@components/common/sort-form";

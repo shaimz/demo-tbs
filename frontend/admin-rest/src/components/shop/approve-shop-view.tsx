@@ -5,7 +5,7 @@ import {
   useModalState,
 } from "@components/ui/modal/modal.context";
 import Input from "@components/ui/input";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useApproveShopMutation } from "@data/shop/use-approve-shop.mutation";
 type FormValues = {
   admin_commission_rate: number;

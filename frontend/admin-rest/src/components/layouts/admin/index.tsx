@@ -1,6 +1,6 @@
 import Navbar from "@components/layouts/navigation/top-navbar";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import SidebarItem from "@components/layouts/navigation/sidebar-item";
 
 const AdminLayout: React.FC = ({ children }) => {

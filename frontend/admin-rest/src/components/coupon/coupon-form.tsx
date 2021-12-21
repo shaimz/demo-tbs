@@ -12,7 +12,7 @@ import { useSettings } from "@contexts/settings.context";
 import { AttachmentInput, Coupon, CouponType } from "@ts-types/generated";
 import { useCreateCouponMutation } from "@data/coupon/use-coupon-create.mutation";
 import { useUpdateCouponMutation } from "@data/coupon/use-coupon-update.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import FileInput from "@components/ui/file-input";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { couponValidationSchema } from "./coupon-validation-schema";

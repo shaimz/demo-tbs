@@ -2,7 +2,7 @@ import { LocationInput } from "@graphql/user.graphql";
 import { Autocomplete, useJsApiLoader } from "@react-google-maps/api";
 import { Libraries } from "@react-google-maps/api/dist/utils/make-load-script-url";
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Loader from "../loader/loader";
 
 const libraries: Libraries = ["places"];

@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 import cn from "classnames";
 import Cleave from "cleave.js/react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import "cleave.js/dist/addons/cleave-phone.us";
 
 interface PhoneNumberInputProps {

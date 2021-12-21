@@ -14,7 +14,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import SelectInput from "@components/ui/select-input";
 import ValidationError from "@components/ui/form-validation-error";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useEffect } from "react";
 import AdminLayout from "@components/layouts/admin";
 import Card from "@components/common/card";

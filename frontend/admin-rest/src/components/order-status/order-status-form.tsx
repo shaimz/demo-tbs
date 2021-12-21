@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 import ColorPicker from "@components/ui/color-picker/color-picker";
 import { useCreateOrderStatusMutation } from "@data/order-status/product-create.mutation";
 import { useUpdateOrderStatusMutation } from "@data/order-status/product-update.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { orderStatusValidationSchema } from "./order-status-validation-schema";
 

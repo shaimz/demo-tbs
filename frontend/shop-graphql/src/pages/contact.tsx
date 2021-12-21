@@ -7,7 +7,7 @@ import { useContactMutation } from "@graphql/contact.graphql";
 import { toast } from "react-toastify";
 import { siteSettings } from "@settings/site.settings";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 

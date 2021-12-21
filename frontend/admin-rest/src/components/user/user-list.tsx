@@ -5,7 +5,7 @@ import ActionButtons from "@components/common/action-buttons";
 import { siteSettings } from "@settings/site.settings";
 import { UserPaginator } from "@ts-types/generated";
 import { useMeQuery } from "@data/user/use-me.query";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 type IProps = {

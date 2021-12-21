@@ -2,7 +2,7 @@ import { Table } from "@components/ui/table";
 import ActionButtons from "@components/common/action-buttons";
 import { Attribute, Shop } from "@ts-types/generated";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export type IProps = {
   attributes: Attribute[] | undefined;

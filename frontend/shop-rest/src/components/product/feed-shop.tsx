@@ -4,7 +4,7 @@ import Button from "@components/ui/button";
 import ErrorMessage from "@components/ui/error-message";
 import renderProductCard from "@components/product/render-product-card";
 import NotFound from "@components/common/not-found";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useProductsQuery } from "@data/product/use-products.query";
 import { Fragment } from "react";
 

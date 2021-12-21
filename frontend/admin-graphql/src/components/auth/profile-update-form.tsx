@@ -8,7 +8,7 @@ import { getErrorMessage } from "@utils/form-error";
 import TextArea from "@components/ui/text-area";
 import pick from "lodash/pick";
 import FileInput from "@components/ui/file-input";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { toast } from "react-toastify";
 
 type FormValues = {

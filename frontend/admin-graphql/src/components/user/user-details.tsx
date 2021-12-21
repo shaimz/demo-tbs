@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CheckMarkFill } from "@components/icons/checkmark-circle-fill";
 import { CloseFillIcon } from "@components/icons/close-fill";
 import { useMeQuery } from "@graphql/me.graphql";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Link from "@components/ui/link";
 import { ROUTES } from "@utils/routes";
 import Loader from "@components/ui/loader/loader";

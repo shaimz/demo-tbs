@@ -8,7 +8,7 @@ import Card from "@components/common/card";
 import Description from "@components/ui/description";
 import { useRouter } from "next/router";
 import { ROUTES } from "@utils/routes";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import { customerValidationSchema } from "./user-validation-schema";
 type FormValues = {

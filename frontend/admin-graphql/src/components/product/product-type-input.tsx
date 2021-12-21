@@ -4,7 +4,7 @@ import { useFormContext } from "react-hook-form";
 import { ProductType } from "@graphql/products.graphql";
 import Card from "@components/common/card";
 import ValidationError from "@components/ui/form-validation-error";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const productType = [
   { name: "Simple Product", value: ProductType.Simple },

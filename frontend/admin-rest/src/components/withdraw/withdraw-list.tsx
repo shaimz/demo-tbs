@@ -1,7 +1,7 @@
 import Pagination from "@components/ui/pagination";
 import { Table } from "@components/ui/table";
 import ActionButtons from "@components/common/action-buttons";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 import usePrice from "@utils/use-price";
 import { adminOnly, getAuthCredentials, hasAccess } from "@utils/auth-utils";

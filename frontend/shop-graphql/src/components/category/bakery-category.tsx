@@ -10,7 +10,7 @@ import cn from "classnames";
 import { ArrowNextIcon } from "@components/icons/arrow-next";
 import { ArrowPrevIcon } from "@components/icons/arrow-prev";
 import BakeryCategoryLoader from "@components/ui/loaders/bakery-category-loader";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 SwiperCore.use([Navigation]);
 

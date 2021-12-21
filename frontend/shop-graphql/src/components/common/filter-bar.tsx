@@ -1,7 +1,7 @@
 import { useUI } from "@contexts/ui.context";
 import ProductTypeMenu from "@components/layout/navbar/product-type-menu";
 import { FilterIcon } from "@components/icons/filter-icon";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function FilterBar() {
   const { t } = useTranslation("common");

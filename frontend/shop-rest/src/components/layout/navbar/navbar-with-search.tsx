@@ -11,7 +11,7 @@ import dynamic from "next/dynamic";
 import { ROUTES } from "@utils/routes";
 import { useTypesQuery } from "@data/type/use-types.query";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const AuthorizedMenu = dynamic(
   () => import("@components/layout/navbar/authorized-menu"),

@@ -7,7 +7,7 @@ import {
 import Alert from "@components/ui/alert";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 const EnterEmailView = dynamic(() => import("./enter-email-view"));
 const EnterTokenView = dynamic(() => import("./enter-token-view"));
 const EnterNewPasswordView = dynamic(() => import("./enter-new-password-view"));

@@ -14,7 +14,7 @@ import Spinner from "@components/ui/loaders/spinner/spinner";
 import { ROUTES } from "@utils/routes";
 import { useSearch } from "@contexts/search.context";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { CheckMark } from "@components/icons/checkmark";
 import { useIsRTL } from "@utils/locals";

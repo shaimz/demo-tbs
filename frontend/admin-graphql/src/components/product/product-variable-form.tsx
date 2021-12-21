@@ -13,7 +13,7 @@ import SelectInput from "@components/ui/select-input";
 import { cartesian } from "@utils/cartesian";
 import isEmpty from "lodash/isEmpty";
 import { useEffect } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useRouter } from "next/router";
 import { useShopQuery } from "@graphql/shops.graphql";
 

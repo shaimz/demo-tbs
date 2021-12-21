@@ -1,7 +1,7 @@
 import { CloseIcon } from "@components/icons/close-icon";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useRef } from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function Modal({ open, onClose, children }: any) {
   const cancelButtonRef = useRef(null);

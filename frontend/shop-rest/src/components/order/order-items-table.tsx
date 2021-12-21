@@ -1,7 +1,7 @@
 import { Table } from "@components/ui/table";
 import usePrice from "@utils/use-price";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 export const OrderItems = ({ products }: { products: any }) => {

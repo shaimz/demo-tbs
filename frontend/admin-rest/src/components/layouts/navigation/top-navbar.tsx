@@ -7,7 +7,7 @@ import { NavbarIcon } from "@components/icons/navbar-icon";
 import { motion } from "framer-motion";
 import DrawerWrapper from "@components/ui/drawer-wrapper";
 import { siteSettings } from "@settings/site.settings";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { ROUTES } from "@utils/routes";
 import {
   adminAndOwnerOnly,

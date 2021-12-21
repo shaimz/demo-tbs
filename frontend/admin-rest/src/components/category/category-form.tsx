@@ -22,7 +22,7 @@ import { useCategoriesQuery } from "@data/category/use-categories.query";
 import { useUpdateCategoryMutation } from "@data/category/use-category-update.mutation";
 import { useCreateCategoryMutation } from "@data/category/use-category-create.mutation";
 import { categoryIcons } from "./category-icons";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import FileInput from "@components/ui/file-input";
 import SelectInput from "@components/ui/select-input";
 import { yupResolver } from "@hookform/resolvers/yup";

@@ -11,7 +11,7 @@ import PasswordInput from "@components/ui/password-input";
 import Button from "@components/ui/button";
 import { useUI } from "@contexts/ui.context";
 import { getErrorMessage } from "@utils/form-error";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useModalAction } from "@components/ui/modal/modal.context";

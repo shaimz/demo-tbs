@@ -9,7 +9,7 @@ import { loggedIn } from "@utils/is-loggedin";
 import { useState } from "react";
 import ValidationError from "@components/ui/validation-error";
 import { useVerifyCheckoutMutation } from "@data/order/use-checkout-verify.mutation";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useCart } from "@contexts/quick-cart/cart.context";
 import { useModalAction } from "@components/ui/modal/modal.context";
 

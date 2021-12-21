@@ -3,7 +3,7 @@ import Input from "@components/ui/input";
 import { useUpdateCustomerMutation } from "@graphql/auth.graphql";
 import { maskPhoneNumber } from "@utils/mask-phone-number";
 import { useForm } from "react-hook-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   initialValues: {

@@ -6,7 +6,7 @@ import Avatar from "@components/ui/avatar";
 import { zoomInBottom } from "@utils/motion/zoom-in-bottom";
 import { useCustomerQuery } from "@data/customer/use-customer.query";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 export default function AuthorizedMenu() {
   const { data } = useCustomerQuery();

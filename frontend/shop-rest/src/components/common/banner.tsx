@@ -4,7 +4,7 @@ import { BannerType } from "@settings/site-pages.settings";
 import Image from "next/image";
 import { Waypoint } from "react-waypoint";
 import cn from "classnames";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 type BannerProps = {
   banner: BannerType;

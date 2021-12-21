@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ContactForm from "./contact-form";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface ContactProps {
   user: any;

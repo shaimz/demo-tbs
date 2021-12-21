@@ -12,7 +12,7 @@ import { cartesian } from "@utils/cartesian";
 import isEmpty from "lodash/isEmpty";
 import { useEffect } from "react";
 import { Product } from "@ts-types/generated";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useAttributesQuery } from "@data/attributes/use-attributes.query";
 
 type IProps = {

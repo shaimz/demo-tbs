@@ -14,7 +14,7 @@ import Radio from "@components/ui/radio/radio";
 import Label from "@components/ui/label";
 import { getErrorMessage } from "@utils/form-error";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { ROUTES } from "@utils/routes";
 import { toast } from "react-toastify";
 import { yupResolver } from "@hookform/resolvers/yup";

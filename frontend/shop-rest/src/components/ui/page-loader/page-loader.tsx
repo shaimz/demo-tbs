@@ -1,6 +1,6 @@
 import cn from "classnames";
 import styles from "./page-loader.module.css";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const PageLoader = ({ text = "text-loading" }) => {
   const { t } = useTranslation("common");

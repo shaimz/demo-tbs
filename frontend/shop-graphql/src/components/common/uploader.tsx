@@ -3,7 +3,7 @@ import { useEffect, useState, useCallback } from "react";
 import { useDropzone, FileWithPath } from "react-dropzone";
 import { useUploadMutation } from "@graphql/upload.graphql";
 import Spinner from "@components/ui/loaders/spinner/spinner";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 const getPreviewImage = (value: any) => {
   let images: any[] = [];

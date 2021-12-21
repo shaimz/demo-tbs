@@ -4,7 +4,7 @@ import { SUPER_ADMIN } from "@utils/constants";
 import { parseContextCookie } from "@utils/parse-cookie";
 import { ROUTES } from "@utils/routes";
 import { GetServerSideProps } from "next";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 export const getServerSideProps: GetServerSideProps = async ({

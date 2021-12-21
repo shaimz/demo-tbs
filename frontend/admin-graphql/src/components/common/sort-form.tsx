@@ -1,7 +1,7 @@
 import Select from "@components/ui/select/select";
 import cn from "classnames";
 import Label from "@components/ui/label";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 
 interface Props {
   className?: string;

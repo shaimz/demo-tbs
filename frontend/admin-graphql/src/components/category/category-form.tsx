@@ -29,7 +29,7 @@ import ValidationError from "@components/ui/form-validation-error";
 import { useEffect } from "react";
 import { toast } from "react-toastify";
 import { categoryIcons } from "./category-icons";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import FileInput from "@components/ui/file-input";
 import SelectInput from "@components/ui/select-input";
 import { yupResolver } from "@hookform/resolvers/yup";

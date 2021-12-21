@@ -16,7 +16,7 @@ import {
 import InvoicePdf from "./invoice-pdf";
 import { PDFDownloadLink } from "@react-pdf/renderer";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
+import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { useIsRTL } from "@utils/locals";
 
 type IProps = {
