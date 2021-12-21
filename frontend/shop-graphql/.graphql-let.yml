@@ -1,4 +1,4 @@
-schema: http://localhost:8000/graphql
+schema: https://demo.tbs.md/graphql
 documents: ./src/**/*.graphql
 plugins:
   - typescript

@@ -11,6 +11,7 @@ import { createUploadLink } from "apollo-upload-client";
 import Cookies from "js-cookie";
 import deepMerge from "deepmerge";
 import isEqual from "lodash/isEqual";
+import absoluteUrl from "next-absolute-url";
 
 export const APOLLO_STATE_PROP_NAME = "__APOLLO_STATE__";
 
@@ -28,7 +29,7 @@ function createApolloClient() {
   });
 
   const httpLink = createUploadLink({
-    uri: process.env.NEXT_PUBLIC_GRAPHQL_API_ENDPOINT, // Server URL (must be absolute)
+    uri: 'https://demo.tbs.md/graphql', // Server URL (must be absolute)
     credentials: "same-origin",
   });
 

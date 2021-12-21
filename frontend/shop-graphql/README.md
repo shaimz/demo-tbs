@@ -10,7 +10,7 @@
 10. order details
 11. Profile Page
 12. Single Page
-13. Single Page Modal
+13. Single Page Modal.
 
 =========Overall Responsive Design===========
 should avoid multiple default selection at address
