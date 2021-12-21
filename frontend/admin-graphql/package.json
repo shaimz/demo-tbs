@@ -5,7 +5,7 @@
   "scripts": {
     "codegen": "graphql-let",
     "dev": "yarn codegen && next dev -p 3002",
-    "build": "yarn codegen && next build",
+    "build": "yarn codegen && next build && next export",
     "start": "next start -p 3002"
   },
   "dependencies": {
