@@ -1,4 +1,4 @@
-schema: https://api-shaimz.vercel.app
+schema: https://demo.tbs.md/graphql
 documents: ./src/**/*.graphql
 plugins:
   - typescript
