@@ -1,0 +1,8 @@
+~$ git config --global user.name "shaimz"
+~$ git config --global user.email "cvicol2@gmail.com"
+
+~$ git config --local user.name "shaimz"
+~$ git config --local user.email "cvicol2@gmail.com"
+
+~$ git config --worktree user.name "shaimz"
+~$ git config --worktree user.email "cvicol2@gmail.com"
