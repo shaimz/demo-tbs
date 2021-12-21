@@ -1,7 +1,7 @@
 {
   "build": {
     "env": {
-      "NEXT_PUBLIC_GRAPHQL_API_ENDPOINT": "https://api-shaimz.vercel.app",
+      "NEXT_PUBLIC_GRAPHQL_API_ENDPOINT": "https://demo.tbs.md/graphql",
       "NEXT_PUBLIC_SHOP_URL": "https://boom-shaimz.vercel.app"
     }
   }
