@@ -322,18 +322,18 @@ ShopPage.Layout = ShopLayout;
 ShopPage.authenticate = {
   permissions: adminOwnerAndStaffOnly,
 };
-// export const getServerSideProps = async ({ locale, params }: any) => {
-//   const apolloClient = initializeApollo();
-//   const { data } = await apolloClient.query({
-//     query: ShopDocument,
-//     variables: { slug: params.shop },
-//   });
-//   if (!data?.shop) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-//   return addApolloState(apolloClient, {
+export const getStaticProps = async ({ locale, params }: any) => {
+  const apolloClient = initializeApollo();
+  const { data } = await apolloClient.query({
+    query: ShopDocument,
+    variables: { slug: params.shop },
+  });
+  if (!data?.shop) {
+    return {
+      notFound: true,
+    };
+  }
+  return addApolloState(apolloClient, {
 
-//   });
-// };
+  });
+};

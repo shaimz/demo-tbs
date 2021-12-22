@@ -11,7 +11,7 @@ import {
   hasAccess,
   isAuthenticated,
 } from "@utils/auth-utils";
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { ROUTES } from "@utils/routes";
 import AppLayout from "@components/layouts/app";
 
@@ -36,23 +36,23 @@ export default function ProfilePage() {
 
 ProfilePage.Layout = AppLayout;
 
-// export const getServerSideProps: GetServerSideProps = async (ctx) => {
-//   const { locale } = ctx;
-//   const { token, permissions } = getAuthCredentials(ctx);
-//   if (
-//     !isAuthenticated({ token, permissions }) ||
-//     !hasAccess(allowedRoles, permissions)
-//   ) {
-//     return {
-//       redirect: {
-//         destination: ROUTES.LOGIN,
-//         permanent: false,
-//       },
-//     };
-//   }
-//   return {
-//     props: {
-//       userPermissions: permissions,
-//     },
-//   };
-// };
+export const getStaticProps: GetStaticProps = async (ctx) => {
+  const { locale } = ctx;
+  const { token, permissions } = getAuthCredentials(ctx);
+  if (
+    !isAuthenticated({ token, permissions }) ||
+    !hasAccess(allowedRoles, permissions)
+  ) {
+    return {
+      redirect: {
+        destination: ROUTES.LOGIN,
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: {
+      userPermissions: permissions,
+    },
+  };
+};
