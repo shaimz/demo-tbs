@@ -22,8 +22,4 @@ CreateWithdrawPage.authenticate = {
 };
 CreateWithdrawPage.Layout = ShopLayout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["form", "common"])),
-  },
-});
+
