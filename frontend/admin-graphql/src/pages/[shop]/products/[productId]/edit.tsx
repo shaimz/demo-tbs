@@ -4,7 +4,7 @@ import Loader from "@components/ui/loader/loader";
 import { useProductQuery } from "@graphql/products.graphql";
 import { useRouter } from "next/router";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ShopLayout from "@components/layouts/shop";
 import { adminOwnerAndStaffOnly } from "@utils/auth-utils";
 

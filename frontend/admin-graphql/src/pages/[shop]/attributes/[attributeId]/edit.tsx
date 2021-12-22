@@ -4,7 +4,7 @@ import Loader from "@components/ui/loader/loader";
 import CreateOrUpdateAttributeForm from "@components/attribute/attribute-form";
 import { useAttributeQuery } from "@graphql/attributes.graphql";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ShopLayout from "@components/layouts/shop";
 import { adminOwnerAndStaffOnly } from "@utils/auth-utils";
 export default function UpdateAttributePage() {

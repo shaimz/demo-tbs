@@ -20,7 +20,7 @@ import { formatAddress } from "@utils/format-address";
 import Loader from "@components/ui/loader/loader";
 import ValidationError from "@components/ui/form-validation-error";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import SelectInput from "@components/ui/select-input";
 import { useIsRTL } from "@utils/locals";
 import { adminOnly } from "@utils/auth-utils";
@@ -272,8 +272,3 @@ OrderDetailsPage.authenticate = {
 };
 OrderDetailsPage.Layout = Layout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["common", "form", "table"])),
-  },
-});

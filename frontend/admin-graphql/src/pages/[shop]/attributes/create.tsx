@@ -1,6 +1,6 @@
 import CreateOrUpdateAttributeForm from "@components/attribute/attribute-form";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ShopLayout from "@components/layouts/shop";
 import { adminOwnerAndStaffOnly } from "@utils/auth-utils";
 

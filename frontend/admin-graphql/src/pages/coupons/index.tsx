@@ -14,7 +14,7 @@ import { LIMIT } from "@utils/constants";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 import { ROUTES } from "@utils/routes";
 import SortFormGql from "@components/common/sort-form-gql";
@@ -96,8 +96,3 @@ Coupons.authenticate = {
 };
 Coupons.Layout = Layout;
 
-export const getStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["form", "common", "table"])),
-  },
-});

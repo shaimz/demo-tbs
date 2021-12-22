@@ -3,7 +3,7 @@ import Layout from "@components/layouts/admin";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { useWithdrawsQuery } from "@graphql/withdraws.graphql";
 import WithdrawList from "@components/withdraw/withdraw-list";
 import { adminOnly } from "@utils/auth-utils";

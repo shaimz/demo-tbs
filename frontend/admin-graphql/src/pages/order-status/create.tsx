@@ -2,7 +2,7 @@ import Layout from "@components/layouts/admin";
 import CreateOrUpdateOrderStatusForm from "@components/order-status/order-status-form";
 import { adminOnly } from "@utils/auth-utils";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 export default function CreateOrderStatusPage() {
   const { t } = useTranslation();

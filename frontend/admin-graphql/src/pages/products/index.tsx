@@ -13,7 +13,7 @@ import {
 } from "@graphql/products.graphql";
 import { useCallback, useState } from "react";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 import CategoryTypeFilter from "@components/product/category-type-filter";
 import SortFormGql from "@components/common/sort-form-gql";

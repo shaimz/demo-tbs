@@ -5,7 +5,7 @@ import Loader from "@components/ui/loader/loader";
 import { useOrderStatusQuery } from "@graphql/order_status.graphql";
 import { useRouter } from "next/router";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 
 export default function UpdateOrderStatusPage() {
@@ -35,8 +35,3 @@ UpdateOrderStatusPage.authenticate = {
 };
 UpdateOrderStatusPage.Layout = Layout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["form", "common", "table"])),
-  },
-});

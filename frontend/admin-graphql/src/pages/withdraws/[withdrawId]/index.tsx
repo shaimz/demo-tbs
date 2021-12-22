@@ -1,5 +1,5 @@
 import { adminOnly } from "@utils/auth-utils";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import {
@@ -184,8 +184,3 @@ Withdraw.authenticate = {
 };
 Withdraw.Layout = AdminLayout;
 
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale!, ["table", "common", "form"])),
-  },
-});

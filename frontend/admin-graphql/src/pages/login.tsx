@@ -3,7 +3,7 @@ import Logo from "@components/ui/logo";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import { GetStaticProps } from "next";
 import { ROUTES } from "@utils/routes";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { getAuthCredentials, isAuthenticated } from "@utils/auth-utils";
 import { useRouter } from "next/router";
 

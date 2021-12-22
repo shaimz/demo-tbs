@@ -1,7 +1,7 @@
 import ShopLayout from "@components/layouts/shop";
 import LinkButton from "@components/ui/link-button";
 import { ShopDocument, useShopQuery } from "@graphql/shops.graphql";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { MapPin } from "@components/icons/map-pin";

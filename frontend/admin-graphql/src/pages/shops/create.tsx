@@ -3,7 +3,7 @@ import ShopForm from "@components/shop/shop-form";
 import { adminAndOwnerOnly } from "@utils/auth-utils";
 import { GetStaticProps } from "next";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 export default function CreateShopPage() {
   const { t } = useTranslation();

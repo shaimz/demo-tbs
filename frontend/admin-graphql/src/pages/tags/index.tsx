@@ -6,7 +6,7 @@ import { useState } from "react";
 import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import TagList from "@components/tag/tag-list";
 import {
   useTagsQuery,
@@ -94,9 +94,3 @@ Tags.authenticate = {
   permissions: adminOnly,
 };
 Tags.Layout = Layout;
-
-export const getStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["form", "common", "table"])),
-  },
-});
