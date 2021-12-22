@@ -29,6 +29,7 @@ import { PriceWalletIcon } from "@components/icons/shops/price-wallet";
 import { PercentageIcon } from "@components/icons/shops/percentage";
 import { DollarIcon } from "@components/icons/shops/dollar";
 import ReadMore from "@components/ui/truncate";
+import GetStaticPaths from 'next';
 
 export default function ShopPage() {
   const { t } = useTranslation();
@@ -337,3 +338,11 @@ export const getStaticProps = async ({ locale, params }: any) => {
 
   });
 };
+
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+
+    return {
+        paths: [], //indicates that no page needs be created at build time
+        fallback: 'blocking' //indicates the type of fallback
+    }
+}
