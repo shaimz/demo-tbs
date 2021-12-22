@@ -37,7 +37,7 @@ export function getAuthCredentials(context?: any): {
 
 export function parseSSRCookie(context: any) {
   console.log(context)
-  return SSRCookie.parse((context.req.headers.cookie || "") ?? "");
+  return SSRCookie.parse(( context.req.headers.cookie !== undefined ? "" : context.req.headers.cookie ) ?? "");
 }
 
 export function hasAccess(
