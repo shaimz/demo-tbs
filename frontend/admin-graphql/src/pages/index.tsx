@@ -39,11 +39,6 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   return {
     props: {
       userPermissions: permissions,
-      ...(await serverSideTranslations(locale!, [
-        "common",
-        "table",
-        "widgets",
-      ])),
     },
   };
 };

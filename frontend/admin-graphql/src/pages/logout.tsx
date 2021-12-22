@@ -30,8 +30,4 @@ function SignOut() {
 
 export default SignOut;
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale!, ["common"])),
-  },
-});
+

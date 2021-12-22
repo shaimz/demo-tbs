@@ -84,8 +84,4 @@ TaxesPage.authenticate = {
 };
 TaxesPage.Layout = Layout;
 
-export const getStaticProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["table", "common", "form"])),
-  },
-});
+

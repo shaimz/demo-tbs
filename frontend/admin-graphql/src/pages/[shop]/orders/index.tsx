@@ -91,8 +91,4 @@ Orders.authenticate = {
 };
 Orders.Layout = ShopLayout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["table", "common", "form"])),
-  },
-});
+

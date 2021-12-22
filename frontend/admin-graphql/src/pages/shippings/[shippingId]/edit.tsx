@@ -35,8 +35,4 @@ UpdateShippingPage.authenticate = {
 };
 UpdateShippingPage.Layout = Layout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["table", "common", "form"])),
-  },
-});
+

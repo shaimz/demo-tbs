@@ -334,8 +334,6 @@ export const getServerSideProps = async ({ locale, params }: any) => {
     };
   }
   return addApolloState(apolloClient, {
-    props: {
-      ...(await serverSideTranslations(locale, ["form", "common"])),
-    },
+
   });
 };

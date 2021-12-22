@@ -35,8 +35,4 @@ UpdateGroupPage.authenticate = {
 };
 UpdateGroupPage.Layout = Layout;
 
-export const getServerSideProps = async ({ locale }: any) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["form", "common"])),
-  },
-});
+
