@@ -7,11 +7,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getAuthCredentials, isAuthenticated } from "@utils/auth-utils";
 import { useRouter } from "next/router";
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale!, ["common", "form"])),
-  },
-});
+
 
 export default function LoginPage() {
   const router = useRouter();

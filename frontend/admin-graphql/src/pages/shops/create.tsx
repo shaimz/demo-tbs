@@ -23,8 +23,4 @@ CreateShopPage.authenticate = {
 };
 CreateShopPage.Layout = OwnerLayout;
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale!, ["common", "form"])),
-  },
-});
+
