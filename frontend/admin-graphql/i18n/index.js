@@ -15,8 +15,7 @@ const enTranslations = {
 const i18n = {
 	translations: {
 		en: enTranslations,
-		de: de.i18n,
-	},
+  },
 	defaultLang: 'en'
 }
 
