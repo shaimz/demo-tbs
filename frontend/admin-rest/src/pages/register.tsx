@@ -7,11 +7,7 @@ import { useRouter } from "next/router";
 import { getAuthCredentials, isAuthenticated } from "@utils/auth-utils";
 import { ROUTES } from "@utils/routes";
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale!, ["common", "form"])),
-  },
-});
+
 
 export default function RegisterPage() {
   const router = useRouter();
