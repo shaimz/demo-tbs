@@ -22,23 +22,23 @@ export default function Dashboard({ userPermissions }: any) {
 
 Dashboard.Layout = AppLayout;
 
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { locale } = ctx;
-  const { token, permissions } = getAuthCredentials(ctx);
-  if (
-    !isAuthenticated({ token, permissions }) ||
-    !hasAccess(allowedRoles, permissions)
-  ) {
-    return {
-      redirect: {
-        destination: ROUTES.LOGIN,
-        permanent: false,
-      },
-    };
-  }
-  return {
-    props: {
-      userPermissions: permissions,
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async (ctx) => {
+//   const { locale } = ctx;
+//   const { token, permissions } = getAuthCredentials(ctx);
+//   if (
+//     !isAuthenticated({ token, permissions }) ||
+//     !hasAccess(allowedRoles, permissions)
+//   ) {
+//     return {
+//       redirect: {
+//         destination: ROUTES.LOGIN,
+//         permanent: false,
+//       },
+//     };
+//   }
+//   return {
+//     props: {
+//       userPermissions: permissions,
+//     },
+//   };
+// };
