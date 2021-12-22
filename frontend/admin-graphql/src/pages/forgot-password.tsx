@@ -7,6 +7,12 @@ import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
 
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale || '', ["common", "form"])),
+  },
+});
+
 export default function ForgotPasswordPage() {
   const router = useRouter();
   const { token, permissions } = getAuthCredentials();
