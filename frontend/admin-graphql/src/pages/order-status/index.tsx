@@ -13,7 +13,7 @@ import {
 import { ROUTES } from "@utils/routes";
 import { useState } from "react";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 import SortFormGql from "@components/common/sort-form-gql";
 

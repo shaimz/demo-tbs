@@ -2,7 +2,7 @@ import ErrorMessage from "@components/ui/error-message";
 import Loader from "@components/ui/loader/loader";
 import { useRouter } from "next/router";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import ShopForm from "@components/shop/shop-form";
 import { useEditShopQuery } from "@graphql/shops.graphql";
 import ShopLayout from "@components/layouts/shop";

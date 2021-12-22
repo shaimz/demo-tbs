@@ -1,7 +1,7 @@
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
 import Layout from "@components/layouts/admin";
 import CreateOrUpdateCategoriesForm from "@components/category/category-form";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 
 export default function CreateCategoriesPage() {

@@ -2,7 +2,7 @@ import Layout from "@components/layouts/admin";
 import UserRegistrationForm from "@components/user/user-form";
 import { adminOnly } from "@utils/auth-utils";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 
 export default function RegisterUserPage() {
   const { t } = useTranslation();

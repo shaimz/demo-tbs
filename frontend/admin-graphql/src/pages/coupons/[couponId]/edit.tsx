@@ -5,7 +5,7 @@ import Loader from "@components/ui/loader/loader";
 import { useCouponQuery } from "@graphql/coupons.graphql";
 import { useRouter } from "next/router";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 
 export default function UpdateCouponPage() {

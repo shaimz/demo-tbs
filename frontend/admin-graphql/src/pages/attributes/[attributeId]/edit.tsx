@@ -5,7 +5,7 @@ import Loader from "@components/ui/loader/loader";
 import CreateOrUpdateAttributeForm from "@components/attribute/attribute-form";
 import { useAttributeQuery } from "@graphql/attributes.graphql";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { adminOnly } from "@utils/auth-utils";
 export default function UpdateAttributePage() {
   const { t } = useTranslation();

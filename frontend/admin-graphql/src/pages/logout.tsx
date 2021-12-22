@@ -4,7 +4,7 @@ import { useApolloClient } from "@apollo/client";
 import { useLogoutMutation } from "@graphql/auth.graphql";
 import Loader from "@components/ui/loader/loader";
 import { useTranslation, useLanguageQuery, LanguageSwitcher } from 'next-export-i18n';
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+
 import { ROUTES } from "@utils/routes";
 import { AUTH_CRED } from "@utils/constants";
 import { GetStaticProps } from "next";
